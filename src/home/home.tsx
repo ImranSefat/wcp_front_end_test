@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Root, Root2 } from "../utils/datamodel";
+import ContactCard from "../components/contact_card";
 
 const Home: React.FC = () => {
   const loadData = async () => {
@@ -22,15 +23,7 @@ const Home: React.FC = () => {
         <h1 className="text-5xl">WCP Front End Test</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-5 gap-4 my-12">
           {responseData.map((person: Root2) => (
-            <div className="bg-blue-300 rounded-3xl m-12 p-12 shadow-lg hover:shadow-xl hover:scale-[110%] duration-150">
-              <img className="py-4 " src={person.avatar}></img>
-              <h2 className="2xl:text-4xl xl:text-3xl font-bold pt-4">
-                {person.first_name} {person.last_name}
-              </h2>
-              <h4 className="text-xl text-slate-600">
-                {person.employment.title}
-              </h4>
-            </div>
+            <ContactCard person={person} />
           ))}
         </div>
 
