@@ -19,22 +19,24 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <div className="text-center m-16">
-        <h1 className="text-5xl">WCP Front End Test</h1>
+      <div className=" m-16">
+        <h1 className="text-5xl text-center">WCP Front End Test</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-5 gap-4 my-12">
           {responseData.map((person: Root2) => (
             <ContactCard person={person} />
           ))}
         </div>
 
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full"
-          onClick={() => {
-            loadData();
-          }}
-        >
-          <h3>Refresh</h3>
-        </button>
+        <div className="text-center">
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full"
+            onClick={() => {
+              loadData();
+            }}
+          >
+            <h3>Refresh</h3>
+          </button>
+        </div>
       </div>
     </>
   );
