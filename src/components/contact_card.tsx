@@ -7,16 +7,12 @@ const ContactCard: React.FC<{ person: Root2 }> = ({ person }) => {
       {/* Top card */}
       <div
         className="
-        
-      w-full 
-      
       bg-blue-300 
       rounded-3xl 
       m-12 
       p-12 
       shadow-lg 
       hover:shadow-xl 
-      
       group-hover:rotate-y-180
       transform transition-all duration-150 ease-in-out
       group-hover:h-0 group-hover:opacity-0
@@ -35,7 +31,7 @@ const ContactCard: React.FC<{ person: Root2 }> = ({ person }) => {
       {/* Back card */}
       <div
         className="
-      w-full  
+      
       bg-red-300 
       rounded-3xl 
       m-12 

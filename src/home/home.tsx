@@ -19,7 +19,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <div className=" m-16">
+      <div className="m-16">
         <h1 className="text-5xl text-center">WCP Front End Test</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-5 gap-4 my-12">
           {responseData.map((person: Root2) => (
