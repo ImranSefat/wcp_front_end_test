@@ -1,7 +1,9 @@
+import Home from "./home/home";
+
 export const App: React.FC = () => {
   return (
     <>
-      <h1>Hello World</h1>
+      <Home />
     </>
   );
 };
